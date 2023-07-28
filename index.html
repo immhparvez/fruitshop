@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Open+Sans:wght@400;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="js/tailwind.config.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-[lato]">
+    <!-- header start -->
+    <header>
+      <nav class="my-5 md:my-14">
+        <div
+          class="container md:bg-[#F85559] flex-row-reverse md:flex-row py-4 px-14 rounded-full flex justify-between items-center mx-auto"
+        >
+          <div class="md:flex-1 flex justify-end items-center">
+            <span
+              class="cursor-pointer md:hidden block"
+              name="menu"
+              onclick="Menu(this)"
+            >
+              <i class="fa-solid fa-bars" name="menu"></i>
+            </span>
+            <ul
+              class="md:flex font-medium z-[-1] md:z-auto md:static bg-black md:bg-transparent p-4 mt-12 md:opacity-100 opacity-0 w-full left-0 md:p-0 md:mt-0 absolute md:text-sm text-xl lg:text-xl text-white md:space-x-5"
+            >
+              <li class="my-2 md:my-0"><a href="#">Home</a></li>
+              <li class="my-2 md:my-0"><a href="#">About</a></li>
+              <li class="my-2 md:my-0"><a href="#">Shop</a></li>
+              <li class="my-2 md:my-0"><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <!-- logo aria -->
+          <div
+            class="flex justify-start md:justify-center gap-4 flex-1 items-center"
+          >
+            <img src="images/logo.png" alt="" class="" />
+            <h3
+              class="text-xl md:text-2xl lg:text-4xl font-bold text-black md:text-white"
+            >
+              Fruit Burst
+            </h3>
+          </div>
+          <!-- search -->
+          <div class="flex-1 hidden md:block">
+            <form action="" class="relative">
+              <input
+                type="search"
+                name="search"
+                placeholder="search here "
+                class="py-2 px-4 rounded-full w-full"
+                id=""
+              />
+              <!-- icon here -->
+              <i
+                class="fa-solid fa-magnifying-glass absolute top-3 right-4"
+              ></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main></main>
+    <!-- main end -->
+  </body>
+</html>
